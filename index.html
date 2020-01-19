@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>loan prediction
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <div class='container-fluid'>
+        <div class="row">
+            <div class="col-sm-12 col-sm-12-custom">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/brown-leather-bifold-wallet-with-banknotes-sticking-out-164637.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/pile-of-brown-coins-on-brown-wooden-table-top-144233.jpg"
+                                class="d-block w-100 " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/grey-metal-case-of-hundred-dollar-bills-164652.jpg" class="d-block w-100 "
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-text hidden-xs">
+                    <div class="col-md-12 text-center">
+                        <h1 class="display-4">
+                            Looking for Loan?</h1>
+                        <h3 class="lead">
+                            Well, Please scroll down!!
+                        </h3>
+                        <a class="btn btn-clear btn-sm btn-min-block" href="#predict">Predict Loan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row section">
+            <div class="col-sm-12">
+                <div class="row heading">
+                    <div class="col-sm-12 display-4 text-center">About</div>
+                </div>
+                <div class="row  ">
+                    <div class="col"></div>
+                    <div class="col-sm-12 col-md-5">
+                        <img src="images/money-pink-coins-pig-9660.jpg" class="image-fluid ">
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <p class="lead">Know your chances of getting a loan before you apply
+                            through
+                            the lender. You
+                            should only ever take out a loan if you're sure you can afford it. When figuring out how to
+                            qualify for a loan, it helps to determine your ability to qualify. That’s why we put
+                            together this loan prequalification predictor. Just bear in mind that this loan predictor is
+                            in no way a guarantee. It is, however, a good starting point in figuring out if you can get
+                            pre-approval for a loan.</p>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  heading" id="predict">
+            <div class="col-sm-12 section">
+                <div class="row heading ">
+                    <div class="col-sm-12 display-4 text-center">Predict Chance</div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-1"></div>
+                    <div class="col-sm-12 col-md-5">
+                        <form id="details">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="lead text-center">Applicant Name : </p>
+                                    </div>
+                                    <div class="col-sm-6"><input type="text" class="form-control" id="applicantName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="lead text-center">Applicant Income : </p>
+                                    </div>
+                                    <div class="col-sm-6"><input type="text" class="form-control" id="applicantIncome">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="lead text-center">Co-Applicant Name : </p>
+                                    </div>
+                                    <div class="col-sm-6"><input type="text" class="form-control" id="coApplicantName">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="lead text-center">Co-Applicant Income : </p>
+                                    </div>
+                                    <div class="col-sm-6"><input type="text" class="form-control"
+                                            id="coApplicantIncome"></div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="calculate(this.form)"
+                                class="btn btn-submit-clear btn-sm btn-min-block buttonCenter">Calculate</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6"><img src="images/photo-of-person-holding-pen-1028726.jpg"
+                            class="image-fluid" style="padding-left:10%;"></div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row footer">
+
+            <div class="col-sm-12 footer-elements">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-3x icon"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fa fa-google-plus-square fa-3x icon"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-3x icon"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="resultModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center" id="resultSpace">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional
+                            JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
