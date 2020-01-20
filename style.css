@@ -1,3 +1,4 @@
+
 .main-text
 {
     position: absolute;
@@ -94,6 +95,15 @@
     border-top:none;
 }
 
+.text{
+    font-size:20px;
+    line-height:1.5;
+}
+.text-colored{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#757575;  
+}
 @media screen and (max-width: 680px){
     .main-text{
         top:10%;
